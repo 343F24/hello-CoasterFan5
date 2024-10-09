@@ -32,6 +32,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"sass": "^1.79.4"
+		"@fontsource-variable/raleway": "^5.1.0",
+		"sass": "^1.79.4",
+		"svelte-french-toast": "^1.2.0"
 	}
 }
