@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource-variable/raleway": "^5.1.0",
+		"@sveltejs/adapter-static": "^3.0.5",
 		"sass": "^1.79.4",
 		"svelte-french-toast": "^1.2.0"
 	}
