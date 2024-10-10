@@ -9,6 +9,9 @@
 1. complete the `TODO`s and `FIXME`s in the `index.html` file
 1. Once you're happy with your progress, use FileZilla to deploy this directory to w3stu such the index.html file you've completed is available at: https://w3stu.cs.jmu.edu/YOUREID/cs343/hello
 1. Does the page look the same as it looks when running on your local computer? If not, why not? What can you do to fix it?
+No, I am not registerd in this course so I cant upload my site there. The site does not error on my local computer
+
 1. Use git to stage your changes, commit your changes, and push your changes to your remote repository.
 1. Tell your repository to deploy to github pages (see the screenshot and caption below it in the `figure` in `index.html`)
 1. Does the page look the same as it looks when running on your local computer? If not, why not? What can you do to fix it?
+yes
