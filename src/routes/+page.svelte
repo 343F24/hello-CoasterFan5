@@ -4,10 +4,18 @@
 	const score = writable(0);
 
 	let clicksPerClick = 1;
+	let clicksPerSecondPerSecond = 0;
 
 	const increaseScore = () => {
 		$score += clicksPerClick;
 	};
+
+	let clicksPerSecond = 0;
+
+	setInterval(() => {
+		clicksPerSecond += clicksPerSecondPerSecond / 10;
+		$score += clicksPerSecond / 10;
+	}, 100);
 
 	type Upgrade = {
 		name: string;
@@ -25,6 +33,42 @@
 			desc: '+1 Click per Click',
 			func: () => {
 				clicksPerClick += 1;
+			}
+		},
+		{
+			name: 'Machine',
+			cost: 10,
+			costIncrease: 1.1,
+			desc: '+1 cps',
+			func: () => {
+				clicksPerSecond += 1;
+			}
+		},
+		{
+			name: 'Golden Cursor',
+			cost: 100,
+			costIncrease: 1.1,
+			desc: '+10 cps',
+			func: () => {
+				clicksPerClick += 10;
+			}
+		},
+		{
+			name: 'Machine 2.0',
+			cost: 1000,
+			costIncrease: 1.1,
+			desc: '+20 cps',
+			func: () => {
+				clicksPerSecond += 20;
+			}
+		},
+		{
+			name: 'Golden Machine',
+			cost: 10000,
+			costIncrease: 1.1,
+			desc: '+1 cps / second',
+			func: () => {
+				clicksPerSecondPerSecond += 1;
 			}
 		}
 	];
@@ -102,5 +146,6 @@
 		background: rgba(0, 0, 0, 0.1);
 		border-radius: 0.25rem;
 		padding: 0.5rem;
+		margin-bottom: 1rem;
 	}
 </style>
